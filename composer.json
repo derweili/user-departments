@@ -1,0 +1,17 @@
+{
+    "name": "derweili/user-departments",
+    "type": "wordpress-plugin",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "derweili",
+            "email": "jw@derweili.de"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+          "Derweili\\UserDepartments\\": "src/"
+        }
+    }
+}
