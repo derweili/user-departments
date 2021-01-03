@@ -1,5 +1,5 @@
 === User Departments ===
-Contributors: (this should be a list of wordpress.org userid's)
+Contributors: derweili
 Donate link: https://derweili.de
 Tags: user-roles, users, capabilities
 Requires at least: 5.5
