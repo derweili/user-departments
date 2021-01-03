@@ -45,7 +45,7 @@ class Department {
 		add_action( 'edit_user_profile_update', array( get_called_class(), 'save_users_departments' ), 0 );
 		add_filter( 'map_meta_cap', array( get_called_class(), 'filter_post_edit_caps' ), 10, 4 );
 		add_filter( 'user_has_cap', array( get_called_class(), 'filter_has_cap' ), 10, 4 );
-		add_action( 'save_post', array( get_called_class(), 'auto_assign_terms' ) );
+		add_action( 'save_post', array( get_called_class(), 'auto_assign_terms' ), 10, 3 );
 	}
 
 	public static function get_post_types() {
@@ -212,11 +212,12 @@ class Department {
 		return $all_caps;
 	}
 
-	public static function auto_assign_terms( $post_id ) {
+	public static function auto_assign_terms( $post_id, $post, $update ) {
+		if( $update ) return;
 		if ( wp_is_post_revision( $post_id ) ) {
-			write_log("dont't add terms to revision");
 		 return;
 		}
+
 
 		$user = new User( wp_get_current_user() );
 		
