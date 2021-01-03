@@ -1,10 +1,10 @@
 <?php
 /**
  * Plugin Name:     User Departments
- * Plugin URI:      PLUGIN SITE HERE
- * Description:     PLUGIN DESCRIPTION HERE
- * Author:          YOUR NAME HERE
- * Author URI:      YOUR SITE HERE
+ * Plugin URI:      https://github.com/derweili/user-departments
+ * Description:     Departments for WordPress Posts and Users
+ * Author:          derweili <jw@derweili.de>
+ * Author URI:      https://derweili.de
  * Text Domain:     user-departments
  * Domain Path:     /languages
  * Version:         0.1.0
